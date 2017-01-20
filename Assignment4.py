@@ -21,13 +21,13 @@ for n,v in my_info.items():
 # 2. Complete Exercise 6-3
 print("")
 
-# Create a glossary of five terms you have learned.
+# Create a glossary of five programming terms.
 glossary = {
         "tuple": "a comma-separated sequence of values in Python that cannot be changed after it has been created.",
         "key-value pair": "a pair with a key and an associated value. The are often used in dictionaries in Python.",
-        "word3": "DEFINITION3", # TODO: Come up with more words and definitions. 
-        "word4": "DEFINITION4",
-        "word5": "DEFINITION5"
+        "IDE": "a software application that provides comprehensive facilities to computer programmers for software development.", # TODO: Come up with more words and definitions. 
+        "string": "a series of characters",
+        "float": "any number with a decimal point."
         }
 
 # Print the entire dictionary
@@ -66,4 +66,4 @@ for p in people:
                 print(n + ": " + v)
         print("")
 
-# TODO: The last problem for this assignment.
+# Create a dictionary that holds customer credit card information.
