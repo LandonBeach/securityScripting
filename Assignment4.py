@@ -8,7 +8,7 @@ my_info = {
         "first": "landon",
         "last": "beach",
         "city": "cedar city"
-    }
+}
 
 # Print the entire dictionary.
 print(my_info)
@@ -42,15 +42,28 @@ for n,v in glossary.items():
 # 3. Complete Exercise 6-7
 print("")
 
-# TODO: Make two new dictionaries representing different people.
-person1 = {}
-person2 = {}
+# Make two new dictionaries representing different people.
+person1 = {
+        "first": "eric",
+        "last": "foreman",
+        "city": "point place"
+}
+person2 = {
+        "first": "scott"
+        "last": "pilgrim"
+        "city": "toronto
+}
 
-# TODO: Store all three dictionaries in a list called people.
+# Store all three dictionaries in a list called people.
 people = []
 people.append(my_info)
 people.append(person1)
 people.append(person2)
 
-# TODO: Print everything you know about each person in a readable format.
+# Print everything you know about each person in a readable format.
+for p in people:
+        for n,v in p[i].items():
+                print(n + ": " + v)
+        print("")
 
+# TODO: The last problem for this assignment.
