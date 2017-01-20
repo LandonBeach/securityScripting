@@ -49,8 +49,8 @@ person1 = {
         "city": "point place"
 }
 person2 = {
-        "first": "scott"
-        "last": "pilgrim"
+        "first": "scott",
+        "last": "pilgrim",
         "city": "toronto
 }
 
