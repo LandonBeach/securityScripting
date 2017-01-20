@@ -62,7 +62,7 @@ people.append(person2)
 
 # Print everything you know about each person in a readable format.
 for p in people:
-        for n,v in p[i].items():
+        for n,v in p.items():
                 print(n + ": " + v)
         print("")
 
