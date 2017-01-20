@@ -51,7 +51,7 @@ person1 = {
 person2 = {
         "first": "scott",
         "last": "pilgrim",
-        "city": "toronto
+        "city": "toronto"
 }
 
 # Store all three dictionaries in a list called people.
