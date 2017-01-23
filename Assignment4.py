@@ -25,7 +25,7 @@ print("")
 glossary = {
     "tuple": "a comma-separated sequence of values in Python that cannot be changed after it has been created.",
     "key-value pair": "a pair with a key and an associated value. The are often used in dictionaries in Python.",
-    "IDE": "a software application that provides comprehensive facilities to computer programmers for software development.", # TODO: Come up with more words and definitions. 
+    "IDE": "a software application that provides comprehensive facilities to computer programmers for software development.", 
     "string": "a series of characters",
     "float": "any number with a decimal point."
 }
