@@ -5,9 +5,9 @@
 # 1. Complete Exercise 6-1
 # Create a dictionary of yourself.
 my_info = {
-        "first": "landon",
-        "last": "beach",
-        "city": "cedar city"
+    "first": "landon",
+    "last": "beach",
+    "city": "cedar city"
 }
 
 # Print the entire dictionary.
@@ -23,12 +23,12 @@ print("")
 
 # Create a glossary of five programming terms.
 glossary = {
-        "tuple": "a comma-separated sequence of values in Python that cannot be changed after it has been created.",
-        "key-value pair": "a pair with a key and an associated value. The are often used in dictionaries in Python.",
-        "IDE": "a software application that provides comprehensive facilities to computer programmers for software development.", # TODO: Come up with more words and definitions. 
-        "string": "a series of characters",
-        "float": "any number with a decimal point."
-        }
+    "tuple": "a comma-separated sequence of values in Python that cannot be changed after it has been created.",
+    "key-value pair": "a pair with a key and an associated value. The are often used in dictionaries in Python.",
+    "IDE": "a software application that provides comprehensive facilities to computer programmers for software development.", # TODO: Come up with more words and definitions. 
+    "string": "a series of characters",
+    "float": "any number with a decimal point."
+}
 
 # Print the entire dictionary
 print(glossary)
@@ -44,14 +44,14 @@ print("")
 
 # Make two new dictionaries representing different people.
 person1 = {
-        "first": "eric",
-        "last": "foreman",
-        "city": "point place"
+    "first": "eric",
+    "last": "foreman",
+    "city": "point place"
 }
 person2 = {
-        "first": "scott",
-        "last": "pilgrim",
-        "city": "toronto"
+    "first": "scott",
+    "last": "pilgrim",
+    "city": "toronto"
 }
 
 # Store all three dictionaries in a list called people.
@@ -62,8 +62,28 @@ people.append(person2)
 
 # Print everything you know about each person in a readable format.
 for p in people:
-        for n,v in p.items():
-                print(n + ": " + v)
-        print("")
+    for n,v in p.items():
+        print(n + ": " + v)
+    print("")
 
-# Create a dictionary that holds customer credit card information.
+
+# 4. Create a dictionary that holds customer credit card information.
+#    The key is the customer's last name, the value is the credit card number, the expiration date (mm/yyyy), and the cvv.
+#    The credit card information should not be editable or changeable.
+#    The dictionary should have at least 4 entries.
+# NOTE: Fake credit values are being used for each card.
+print("")
+cards = {
+    "foreman": ("344375743782055", "123", "01/2020"),
+    "pilgrim": ("342584599151479", "234", "02/2020"),
+    "kenobi": ("71359102960391", "345", "03/2020"),
+    "skywalker": ("372287813758755", "456", "04/2020")
+    }
+
+# Print out the entire dictionary in a readable format.
+for name, card in cards.items():
+    print("Name: " + name.title())
+    print("Card Number: " + card[0])
+    print("CVV: " + card[1])
+    print("Expiration Date: " + card[2])
+    print("")
