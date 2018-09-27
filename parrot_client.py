@@ -1,13 +1,13 @@
 # This is a simple client that sends a message to a server.
 # Author: Landon Beach
 # Date: 4/5/17
-import socket, optparse
+import socket, argparse
 
 # Parse the arguments and assign it to the variable "options".
-parser = optparse.OptionParser()
-parser.add_option("-s", "--server", default="127.0.0.1", dest="svr_addr", help="Connect to IP address SERVER_IP", metavar="SERVER_IP")
-parser.add_option("-p", "--port", default=4444, type="int", dest="svr_port", help="Connect to port SERVER_PORT", metavar="SERVER_PORT")
-parser.add_option("-m", "--message", default=" ", dest="message", help="Send MESSAGE to server", metavar="MESSAGE")
+parser = argparse.ArgumentParser()
+parser.add_argument("-s", "--server", default="127.0.0.1", dest="svr_addr", help="Connect to IP address SERVER_IP", metavar="SERVER_IP")
+parser.add_argument("-p", "--port", default=4444, type="int", dest="svr_port", help="Connect to port SERVER_PORT", metavar="SERVER_PORT")
+parser.add_argument("-m", "--message", default=" ", dest="message", help="Send MESSAGE to server", metavar="MESSAGE")
 (options, args) = parser.parse_args()
 
 # Connect to the server IP and port given from the arguments.
