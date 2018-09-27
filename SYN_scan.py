@@ -3,7 +3,7 @@
 # It returns which ports are open or closed.
 # Author: Landon Beach
 # Date: 4/17/17
-import optparse
+import argparse
 import threading
 from socket import gethostbyname, gethostbyaddr
 from scapy.all import *
@@ -16,9 +16,9 @@ def main():
 	It will initiate a SYN scan and then print the results to stdout. 
 	'''
 	# Add command line options. 
-	parser = optparse.OptionParser('usage %prog -H' + ' <target host> -p <target ports>')
-	parser.add_option('-H', dest="host", type='string', help='specify target host')
-	parser.add_option('-p', dest="ports", type='string', help='specify target ports')
+	parser = argparse.ArgumentParser('usage %prog -H' + ' <target host> -p <target ports>')
+	parser.add_argument('-H', dest="host", type='string', help='specify target host')
+	parser.add_argument('-p', dest="ports", type='string', help='specify target ports')
 
 	# Get the arguments from the command line.
 	(options, args) = parser.parse_args()
@@ -56,7 +56,7 @@ def main():
 			t.start()
 			
 			# Join the thread. 
-			# This will make the main thread wait until all otherthreads are finished.
+			# This will make the main thread wait until all other threads are finished.
 			t.join()
 		
 		# SYN scan is finished, sort and print out the results. 
